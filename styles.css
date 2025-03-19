@@ -75,7 +75,7 @@ nav a:hover{
 
 
 .gate-cards{
-    width: 100%;
+    width: calc(100%-2em);
     justify-self: center;
     align-self: center;
     box-sizing: border-box;
@@ -101,12 +101,9 @@ nav a:hover{
 }
 
 .mission{
+    display: flex;
     height: 100vh;
     border: 2px solid black;
-}
+    justify-self:center;
 
-@media (min-width: 768px) {
-    .container {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+}
