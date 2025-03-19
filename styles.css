@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width:100%;
+    background-color: rgba(128, 128, 128, 0.579);
+    font-family: "raleway";
+}
+
+.logo{
+    display: flex;
+    gap: 5px    ;
+    font-family: "Shrikhand";
+    font-size: larger;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    box-sizing: border-box;
+    gap: 1em;
+    align-items: center;
+    margin-right: 0.2em;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+.hero-section {
+    height: 80vh;
+    margin-bottom: 10px;
+}
+
+.bg-img{
+    max-width: 100%;
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+    animation: changeimage 40s infinite cubic-bezier(.98, .1, .78, .15);
+}
+
+@keyframes changeimage {
+    0% {
+        background-image: url('ravin-rau-IGjXf8P1TXo-unsplash.jpg');
+    }
+
+    25% {
+        background-image: url('running-bulls.jpg');
+    }
+
+    50% {
+        background-image: url('cheese.jpg');
+    }
+
+    75% {
+        background-image: url('tomatoa.jpg');
+    }
+
+    100% {
+        background-image: url('ravin-rau-IGjXf8P1TXo-unsplash.jpg');
+    }
+}
+
+
+.gate-cards{
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    overflow: hidden;
+    object-fit: cover;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 0.25em;
+}
+
+.mission{
+    height: 100vh;
+    border: 2px solid black;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
