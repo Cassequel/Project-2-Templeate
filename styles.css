@@ -7,16 +7,17 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    position: absolute;
     width:100%;
-    background-color: rgba(128, 128, 128, 0.579);
-    font-family: "raleway";
+    height: 5rem;
+    background-color: rgb(255, 255, 255);
+    font-family: "gloock";
+    font-size: larger;
 }
 
 .logo{
     display: flex;
     gap: 5px    ;
-    font-family: "Shrikhand";
+    font-family: "Caesar Dressing";
     font-size: larger;
     align-items: center;
 }
@@ -39,13 +40,13 @@ nav a:hover{
 }
 
 .hero-section {
-    height: 80vh;
+    height: 100vh;
     margin-bottom: 10px;
 }
 
 .bg-img{
     max-width: 100%;
-    min-height: 80vh;
+    min-height: 100vh;
     background-size: cover;
     background-position: center;
     animation: changeimage 40s infinite cubic-bezier(.98, .1, .78, .15);
@@ -57,7 +58,7 @@ nav a:hover{
     }
 
     25% {
-        background-image: url('running-bulls.jpg');
+        background-image: url('takanakuy.jpg');
     }
 
     50% {
@@ -73,6 +74,9 @@ nav a:hover{
     }
 }
 
+.gate-header{
+    margin-left: 1em;
+}
 
 .gate-cards{
     width: calc(100%-2em);
@@ -86,8 +90,8 @@ nav a:hover{
     object-fit: cover;
     margin-left: 1em;
     margin-right: 1em;
+    border: 2px solid black;
 }
-
 
 
 .card img{
@@ -103,7 +107,16 @@ nav a:hover{
 .mission{
     display: flex;
     height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
     border: 2px solid black;
     justify-self:center;
-
 }
+
+@media (min-width: 768px) {
+    .gate-cards {
+        width:100%;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 15rem;
+        justify-content: space-evenly;
+    }
